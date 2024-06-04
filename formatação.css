@@ -1,0 +1,514 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-image: url(imagens/Minimalist\ Elegant\ Horizontal\ Wedding\ Menu.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.banner {
+    
+    background-repeat: no-repeat, repeat-x;
+    background-position: top right, center;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    border-top: 1px solid transparent;
+}
+
+.banner h1 {
+    text-align: center;
+    color: rgb(201, 115, 115);
+    text-shadow: 5px 5px 5px rgb(187, 67, 67);
+    font-size: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 120px;
+    padding-top: 80px;
+}
+
+.Introducao {
+    padding: 1px;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 1600px;
+    background-color: rgb(250, 250, 242);
+    box-shadow: 0 0 20px  rgb(160, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Introducao h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: rgb(201, 115, 115);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Introducao p {
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: rgb(160, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main h1 {
+    text-align: center;
+    color:rgb(201, 115, 115);
+    text-shadow: 5px 5px 5px  rgb(160, 60, 60)ck;
+    font-size: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.main nav img {
+    height: 8%;
+    width: 8%;
+    margin-left: 47%;
+    margin-top: 15px;
+}
+
+.main nav p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main nav ul {
+    text-align: center;
+    margin: 2% 5% 0 0;
+    margin-bottom: 2%;
+    padding: 0;
+    list-style: none; 
+}
+
+.main nav li {
+    display: inline-block;
+    border: 1px solid white; 
+}
+
+.main nav a {
+    background: rgb(160, 60, 60);
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.informacoes {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1px;
+    background-color: rgb(250, 250, 242);
+    box-shadow: 0 0 20px  rgb(160, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.informacoes h3 {
+    margin-bottom: 10px;
+    color: rgb(201, 115, 115);
+    padding-left: 2%;
+    font-size: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.informacoes p {
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    color:rgb(160, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.historia {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1px;
+    background-color: rgb(250, 250, 242);
+    box-shadow: 0 0 20px rgb(160, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.historia h1 {
+    font-size: 40px;
+    text-align: center;
+    color:rgb(201, 115, 115);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.historia p {
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    color:rgb(160, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bcd {
+    width: 25%;
+    height: 20%;
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    float: right;
+    border: solid 5pxrgb(160, 60, 60);
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.abc {
+    width: 25%;
+    height: 20%;
+    padding: 0px;
+    padding-right: 0px;
+    padding-right: 0px;
+    float: left;
+    border: solid 5px rgb(160, 60, 60);
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.Tabela {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Tabela li {
+    width: calc(40% - 5px);
+    margin-bottom: 20px;
+    padding: 50px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px  rgb(160, 60, 60);
+}
+
+.Tabela img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.Tabela p {
+    text-align: center;
+    margin: 0;
+    color: rgb(160, 60, 60)
+}
+
+.documentos {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(250, 250, 242);
+    box-shadow: 0 0 20px  rgb(160, 60, 60);
+}
+
+.documentos h3 {
+    text-align: center;
+    color: rgb(201, 115, 115);
+}
+
+.documentos p {
+
+    color : rgb(160, 60, 60);
+     
+}
+
+.conteudo {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(250, 250, 242);
+    box-shadow: 0 0 20px  rgb(160, 60, 60);
+}
+
+.conteudo h1 {
+    font-size: 40px;
+    text-align: center;
+    color:rgb(201, 115, 115);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.conteudo p {
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    color:rgb(160, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contato {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(250, 250, 242);
+    box-shadow: 0 0 20px rgb(160, 60, 60);
+}
+
+.contato h1 {
+    font-size: 40px;
+    text-align: center;
+    color:rgb(201, 115, 115);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contato h3{
+
+    color:rgb(160, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.contato p {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color:rgb(160, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.lista {
+    list-style: none;
+    margin: 0%;
+    height: 95%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lista li {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color:rgb(216, 150, 150);
+    border-radius: 8%;
+    padding-left: 5px;
+}
+
+.lista img {
+    padding-left: 17%;
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5%;
+}
+
+.lista p {
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pets {
+    text-align: center;
+    font-size: 35px;
+    background-color: rgb(250, 250, 242);
+    box-shadow: 0 0 20px  rgb(160, 60, 60);
+}
+
+.pets h1 {
+    font-size: 40px;
+    color:rgb(201, 115, 115);
+    text-align: center;
+    padding-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pets p {
+    color:rgb(160, 60, 60);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pets img {
+    list-style: none;
+    padding-left: 16px;
+    margin: 0%;
+    height: 95%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pms {
+    width: 15%;
+    height: 10%;
+    margin-left: 12cm;
+}
+
+.solar {
+    width: 15%;
+    height: 10%;
+}
+
+.doação {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(250, 250, 242);
+    box-shadow: 0 0 20px  rgb(160, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.doação h1 {
+    font-size: 40px;
+    text-align: center;
+    color:rgb(201, 115, 115);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.doação h2 {
+    text-align: left;
+    color:rgb(201, 115, 115);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.doação h4 {
+    text-align: center;
+    color: rgb(201, 115, 115);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.doação h5 {
+    text-align: center;
+    color: rgb(201, 115, 115);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.doação p {
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    color:rgb(160, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.transparencia {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(250, 250, 242);
+    box-shadow: 0 0 20px rgb(160, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.transparencia h1 {
+
+    text-align: center;
+    color: rgb(201, 115, 115);
+    font-size: 40px;
+    
+}
+
+.transparencia p {
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    color:rgb(160, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+.transparencia li {
+    padding: 10px;
+    background:rgb(160, 60, 60);
+    text-align: center;
+    margin-bottom: 2%;
+    display: block;       
+}
+
+.mens{
+    margin-left: 50px;
+   }
+
+.horario{
+    margin-left: 50px;
+    width: 50px;
+    
+}
+.whats{
+    margin-left: 150px;
+    padding: 10px;
+}
+.face{
+    margin-left: 12cm;
+}
+.insta{    
+    margin-left: 22cm;
+ 
+   
+}
+
+.rodape{
+     text-align: center;
+     background-color: #ecd2d2;
+     padding: 1px;
+   
+}
+
+.rodape p{
+    color:rgb(163, 55, 55);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.social-links {
+    height: 50px;
+    border-bottom: 1px solid #000;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .social-links img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ecd2d2;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 15px;
+    background-color: rgb(201, 115, 115)
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
