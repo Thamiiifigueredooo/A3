@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Code de Doação</title>
+  <link rel="stylesheet" type="text/css" href="formatacaoform.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+  <script>
+    function getQueryParam(param) {
+        var urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    function atualizarQRCode(valorDoado) {
+      var qrCodeTexto = "https://sua-pagina-de-pagamento.com/?valor=" + valorDoado;
+      var qrCode = qrcode(0, 'H');
+      qrCode.addData(qrCodeTexto);
+      qrCode.make();
+      var qrCodeImage = document.getElementById("qrcodeImage");
+      qrCodeImage.src = qrCode.createDataURL(10); // Escala do QR Code ajustada para 10
+      document.getElementById("paymentLink").href = qrCodeTexto;
+    }
+
+    window.onload = function() {
+      var valorDoado = getQueryParam('valor');
+      if (valorDoado) {
+        document.getElementById("donationAmount").innerText = "Valor da doação: R$ " + valorDoado;
+        atualizarQRCode(valorDoado);
+      } else {
+        document.getElementById("donationAmount").innerText = "Valor da doação não encontrado.";
+      }
+    };
+  </script>
+  <style>
+    #qrcodeImage {
+      width: 300px; /* Ajuste o tamanho conforme necessário */
+      height: 300px; /* Ajuste o tamanho conforme necessário */
+    }
+  </style>
+</head>
+<body>
+  <h1>QR Code de Doação</h1>
+  <div>
+    <p id="donationAmount"></p>
+    <div id="qrcodeContainer">
+      <a id="paymentLink" href="#" target="_blank">
+        <img id="qrcodeImage" src="">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
