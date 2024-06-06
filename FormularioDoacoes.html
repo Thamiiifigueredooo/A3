@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário Doação</title>
+  <link rel="stylesheet" type="text/css" href="../formatacaoform.css">
+  <script>
+    function formatarMoeda(element) {
+        var valor = element.value.replace(/\D/g, '');
+        valor = (valor/100).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+        element.value = 'R$ ' + valor;
+    }
+
+    function validarNome() {
+        var nome = document.getElementById("name").value;
+        if (/\d/.test(nome)) {
+            document.getElementById("nameError").innerText = "Por favor, insira apenas letras no nome.";
+            return false;
+        } else {
+            document.getElementById("nameError").innerText = "";
+            return true;
+        }
+    }
+
+    function validarCPF() {
+        var cpf = document.getElementById("cpf").value;
+        if (cpf.length !== 11) {
+            document.getElementById("cpfError").innerText = "Por favor, insira um CPF válido.";
+            return false;
+        } else {
+            document.getElementById("cpfError").innerText = "";
+        }
+
+        if (!/^\d+$/.test(cpf)) {
+            document.getElementById("cpfError").innerText = "Por favor, insira apenas números no CPF.";
+            return false;
+        } else {
+            document.getElementById("cpfError").innerText = "";
+        }
+
+        return true;
+    }
+
+    function validarFormulario(event) {
+        event.preventDefault();
+        var nomeValido = validarNome();
+        var cpfValido = validarCPF();
+
+        if (nomeValido && cpfValido) {
+            var valorDoado = document.getElementById("donation").value.replace(/\D/g, '');
+            valorDoado = (valorDoado/100).toFixed(2);
+            window.location.href = 'qrcode.html?valor=' + encodeURIComponent(valorDoado);
+        }
+    }
+
+    window.onload = function() {
+        document.getElementById("myForm").addEventListener("submit", validarFormulario);
+    };
+  </script>
+</head>
+<body>
+  <h1>Formulário de doação</h1>
+  <div>
+    <form id="myForm" method="post">
+
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="nome" autocomplete="off" required oninput="validarNome()">
+        <span id="nameError" style="color: red;"></span>
+      </div>
+
+      <div>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" autocomplete="off" required maxlength="11" oninput="validarCPF()">
+        <span id="cpfError" style="color: red;"></span>
+      </div>
+
+      <div>
+        <label for="donation">Valor da doação:</label>
+        <input type="text" id="donation" name="valorDoado" autocomplete="off" required onkeyup="formatarMoeda(this)">
+      </div>
+
+      <div>
+      </div>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</body>
+</html>
